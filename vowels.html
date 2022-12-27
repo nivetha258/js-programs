@@ -1,0 +1,32 @@
+<! doctype html>
+<html>
+<head>
+	<title>vowels</title>
+</head>
+<body>
+
+		<p id="sort">vowels</p>
+
+
+	<script>
+
+					// vowels
+
+ let name="nivetha", vowels="aeiouAEIOU",count=0;
+ for (i=0;i<name.length;i++)
+ {
+     for(j=0;j<vowels.length;j++)
+    {
+         if(name[i]==vowels[j])
+         {
+             count++ 
+         }
+     }
+ }
+document.getElementById("sort").innerHTML = (count)
+
+
+	</script>
+
+</body>
+</html>

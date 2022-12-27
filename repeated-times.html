@@ -1,0 +1,58 @@
+<! doctype html>
+<html>
+<head>
+	<title>no of times value repeated</title>
+</head>
+<body>
+
+		<p id="filter1">max.no of times a value repeated</p>
+		<p id="filter2">no of times a values repeated</p>
+		<p id="times1">no of times a values repeated</p>
+		<p id="times2">no of times a values repeated</p>
+		<p id="times3">no of times a values repeated</p>
+
+	<script>
+
+							//max.no of times a value repeated
+							
+							
+let array=[2,1,58,"a","a","a",8,8,8,8,8,,1],value,max=1;
+for(i=0;i<array.length;i++)
+{
+    let count=1;
+    for(j=i+1;j<array.length;j++)
+    {
+        if(array[i]==array[j])
+        {
+            count++
+        }
+    }
+    if(count>=max)
+    {
+   document.getElementById("filter1").innerHTML =(array[i])
+        max=count;
+        value=i;
+    }
+    
+}
+
+document.getElementById("filter2").innerHTML = ("the value "+ array[value]+" is repeated for "+ max +" times" )
+
+
+						//no of times a values repeated
+
+let obj={}
+obj["name"]="Haris"
+document.getElementById("times1").innerHTML =(obj);
+
+let a=[1,2,3,3,2,2,2,4,6,6,7],dupli={};
+for(x of a){
+    dupli[x]=(dupli[x]||0)+1;
+}
+document.getElementById("times2").innerHTML =(dupli);
+for(i in dupli)
+document.getElementById("times3").innerHTML = ("The value "+i+" repeated "+dupli[i]+" times" );
+	</script>
+
+</body>
+</html>

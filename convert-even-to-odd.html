@@ -1,0 +1,25 @@
+<! doctype html>
+<html>
+<head>
+	<title> even to next odd numbers</title>
+</head>
+<body>
+		<p id="filter">convert even numbers to next odd numbers</p>
+
+
+	<script>
+						//.convert even numbers to next odd numbers
+var num=[10,11,"ada",-16,true,false,"2"]
+for(i=0;i<num.length;i++)
+{
+        if(typeof(num[i])=="number"&& num[i]%2==0)
+        {
+            num[i]+=1
+        }
+}
+   document.getElementById("filter").innerHTML = num
+
+	</script>
+
+</body>
+</html>

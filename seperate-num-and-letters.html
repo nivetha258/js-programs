@@ -1,0 +1,43 @@
+<! doctype html>
+<html>
+<head>
+	<title>separate numbers and letters</title>
+</head>
+<body>
+
+		<p id="sort1"></p>
+		<p id="sort2"></p>
+
+	<script>
+
+			/*-- seperate numbers and letters--*/
+			
+let data="12efd3dfr741rv", num="0123456789", num1="",letter="";
+for(i=0;i<data.length;i++)
+ {
+     let count=1;
+     for(j=0;j<num.length;j++)
+     {
+         if(data[i]==num[j])
+         { 
+            num1=num1.concat(data[i]);
+            count=0;
+         }
+     }
+     if(count)
+     {
+        letter+=data[i];
+    }
+ }
+document.getElementById("sort1").innerHTML =(num1)
+document.getElementById("sort2").innerHTML =(letter)
+
+	 
+
+
+
+
+	</script>
+
+</body>
+</html>

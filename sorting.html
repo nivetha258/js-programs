@@ -1,0 +1,37 @@
+<! doctype html>
+<html>
+<head>
+	<title>soring by challenging original array</title>
+</head>
+<body>
+
+		<p id="sort">sorting</p>
+
+
+	<script>
+
+					// 11.sorting
+					
+					
+let num=[80,2,86,-9,-1, 0],sorted=[],l;
+l=num.length;
+for(i=0;i<l;i++)
+{
+    let small=num[0],index=0;
+    for(j=1;j<num.length;j++)
+    {
+        if(num[j]<small)
+        {
+            small=num[j];
+            index=j
+        }
+    }
+    sorted.push(small);
+    num.splice(index,1);
+}
+document.getElementById("sort").innerHTML = (sorted);
+
+	</script>
+
+</body>
+</html>

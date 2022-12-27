@@ -1,0 +1,64 @@
+<! doctype html>
+<html>
+<head>
+	<title>prime numbers</title>
+</head>
+<body>
+		<p id="filter">prime numbers</p>
+		<p id="list">prime numbers</p>
+		<p id="check">prime numbers</p>
+
+	<script>
+				/*5.filter prime numbers */
+var num=[15,7,8,19,4,0,1,2,3,"ada",-2,-5];
+function primeNumber(a)
+{
+    for(j=2;j<a;j++)
+    {
+        if(a%j==0)
+        {
+            return false;
+        }
+    }
+		return true
+}
+document.getElementById("filter").innerHTML =(num=num.filter(primeNumber));
+
+		/*-- list a prime numbers--*/
+ num=50;count=0;numArray=[]
+for(i=2;i<=num;i++)
+{
+    var p=1;
+    for(j=2;j<i;j++)
+    {
+        if(i%j==0)
+        {
+            var p=0;
+        }
+    }
+    if(p){
+        numArray.push(i)
+        count++
+    }
+}
+document.getElementById("list").innerHTML =("No.of prime number is "+count+". They are "+ numArray)
+
+		/*-- check  prime number --*/
+ num=50;count=0
+    for(i=2;i<num;i++)
+    {
+        if(num%i==0)
+        {
+           count++;
+        }
+    }
+    if(count){
+  document.getElementById("check").innerHTML =("The given number "+ num +" "+"is not a prime number")
+    }
+    else
+   document.getElementById("check").innerHTML =("The given number "+ num +" "+"is a prime number")
+
+	</script>
+
+</body>
+</html>

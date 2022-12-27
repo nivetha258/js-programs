@@ -1,0 +1,34 @@
+<! doctype html>
+<html>
+<head>
+	<title>shuffle with math</title>
+</head>
+<body>
+
+		<p id="shuffle">sorting</p>
+
+
+	<script>
+
+										//12.shuffle
+let num=10; 
+let array=[], rslt;
+let i=0;
+while(i<num)
+{
+    let value=Math.floor(Math.random()*num);
+    let check=array.indexOf(value);
+    if(check==-1)
+    {
+        array.push(value);
+    }
+    i = array.length;
+}
+document.getElementById("shuffle").innerHTML =(array);
+
+ (sorted);
+
+	</script>
+
+</body>
+</html>
