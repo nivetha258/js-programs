@@ -1,0 +1,36 @@
+<! doctype html>
+<html>
+<head>
+	<title>remove duplicate numbers</title>
+</head>
+<body>
+		<p id="filter1">remove duplicate numbers</p>
+		
+
+
+	<script>
+							//remove duplicate numbers
+
+var num=[1,2,3,1,2,"1",5,"ada",6,7,7,8,-1,-1], num2=[];
+for(i=0;i<num.length;i++)
+{
+    let count=0;
+    for(j=0;j<i;j++)
+    {
+        if(num[j]==num[i])
+        {
+           count++; 
+        }
+    }
+    if(count){}
+    else
+        num2.push(num[i]);
+}
+num=num2;
+document.getElementById("filter1").innerHTML = num;
+
+
+	</script>
+
+</body>
+</html>

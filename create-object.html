@@ -1,0 +1,28 @@
+<! doctype html>
+<html>
+<head>
+	<title>create object</title>
+</head>
+<body>
+
+		<p id="shuffle">object</p>
+
+
+	<script>
+	
+						//create object
+let movie={};
+movie["name"]=prompt("enter movie name");
+movie["director"]=prompt("enter director name");
+movie["music"]=prompt("enter music director");
+movie["year"]=parseInt(prompt("enter year released"));
+movie["budget"]=parseInt(prompt("enter budget"));
+for(const i in movie)
+{
+	document.write((i +" : "+movie[i]+"; ")
+}
+
+	</script>
+
+</body>
+</html>

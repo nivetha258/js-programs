@@ -1,0 +1,45 @@
+<! doctype html>
+<html>
+<head>
+	<title>remove even numbers only</title>
+</head>
+<body>
+		<p id="filter1">remove even numbers only</p>
+		<p id="filter2">remove even numbers only</p>
+		<p id="filter3">remove even numbers only</p>
+	<script>
+	
+					//1.remove even numbers only
+					
+	let num1=[7,14,16,17,"18",15,"ada",24,23,true,false,17,58],num2=[];
+ for(i=0;i<num1.length;i++)
+	{
+		if(typeof(num1[i])!=="number"||num1[i]%2!=0)
+		{ 
+			num2.push(num1[i]) ;
+		}
+	}
+	num1=num2;
+document.getElementById("filter1").innerHTML = (num1);
+
+//2.remove even numbers only
+
+
+document.getElementById("filter2").innerHTML = (num1=num1.filter(a=> typeof(a)!=="number"||a%2!=0) );
+
+
+//3.remove even numbers only
+
+	function removeEven(a){
+		 if(typeof(a)!=="number"||a%2!=0)
+		 {
+			 return true
+		 }
+	}
+document.getElementById("filter3").innerHTML = (num1=num1.filter(removeEven));
+
+	
+	</script>
+
+</body>
+</html>

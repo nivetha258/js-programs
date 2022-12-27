@@ -1,0 +1,32 @@
+<! doctype html>
+<html>
+<head>
+	<title>array with single value and array</title>
+</head>
+<body>
+		<p>array with single value and array</p>
+
+	<script>
+ 
+					/*3.array with single value and array */
+  let a=[];
+ let b=parseInt(prompt("enter parent array length"));
+ for(i=0;i<b;i++){ 
+	let d=parseInt(prompt("enter subset array"+ i+ " "+"length "));
+    if(d>1){
+        let c=[];
+    	for(j=0;j<d;j++)
+    	{
+    	 c[j]=parseInt(prompt("enter subset values"));
+    	 }
+    	 a[i]=c;
+    }
+    else{
+        a[i]=parseInt(prompt("enter single value"));
+    }
+}
+ console.log(a);
+	</script>
+
+</body>
+</html>

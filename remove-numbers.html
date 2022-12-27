@@ -1,0 +1,26 @@
+<! doctype html>
+<html>
+<head>
+	<title>remove numbers from an array</title>
+</head>
+<body>
+		<p id="remove">An array of removed numbers</p>
+
+
+	<script>
+								//remove numbers from an array
+var num=[10,11,"ada",-16,true,false,"2"],num1=[]
+for(i=0;i<num.length;i++)
+{
+        if(typeof(num[i])!="number")
+        {
+            num1.push(num[i]);
+        }
+}
+num=num1
+ document.getElementById("remove").innerHTML =(num)
+
+	</script>
+
+</body>
+</html>

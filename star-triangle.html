@@ -1,0 +1,48 @@
+<! doctype html>
+<html>
+<head>
+	<title>left-triangle</title>
+</head>
+<body>
+
+		<p id="sort1">triangle</p>
+			<p id="sort2">triangle</p>
+
+
+	<script>
+
+								//right-angle-triangle ( * )
+
+
+let num1=5,y1="* ",x="";
+for(i=0;i<num1;i++)
+{
+    let value="";
+    for(j=0;j<=i;j++)
+    {
+      value+=y1
+    }
+        x+=value + "<br>";
+}
+    document.getElementById("sort1").innerHTML =(x)
+
+
+let num2=5,y2="* ",x2="";
+for(i=num2;i>=1;i--)
+{
+    let value="";
+    for(j=i;j>=1;j--)
+    {
+      value+=y2;
+    }
+    x2+=value + "<br>"
+  
+}
+  document.getElementById("sort2").innerHTML =(x2)
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<! doctype html>
+<html>
+<head>
+	<title>array of array</title>
+</head>
+<body>
+		<p>2.create an array of array</p>
+
+	<script>
+							/*2.array of array */
+							
+ let a=[];
+ let b=parseInt(prompt("enter array length"));
+ for(i=0;i<b;i++){ 
+	let c=[];
+	let d=parseInt(prompt("enter subset array"+ i+ " "+"length "));
+	for(j=0;j<d;j++){
+	 c[j]=prompt("enter value") 
+	 }
+	 a[i]=c;
+}
+ console.log(a);
+	
+	</script>
+
+</body>
+</html>

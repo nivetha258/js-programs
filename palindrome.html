@@ -1,0 +1,53 @@
+<! doctype html>
+<html>
+<head>
+	<title>palindrome</title>
+</head>
+<body>
+
+		<p id="shuffle1"></p>
+		<p id="shuffle2"></p>
+		<p id="check1"></p>
+		<p id="check2"></p>
+
+	<script>
+
+						/*--  check palindrome 1 ( by new string) --*/
+
+let array1="410014", array2="";
+for(i=0;i<array1.length;i++)
+{
+    array2=array2+array1[array1.length-1-i];
+}
+if(array1==array2)
+{
+    document.getElementById("shuffle1").innerHTML =("the given value is a palindrome");
+}
+else
+    document.getElementById("shuffle2").innerHTML =("the given value is not a palindrome");
+
+
+						/*--  check palindrome 2 --*/
+
+let array="11811";count=0;
+for(i=0;i<array.length/2;i++)
+{
+    if(array[i]==array[array.length-1-i])
+    {}
+    else{
+        count=1;
+    }
+}
+if (count)
+{
+    document.getElementById("check1").innerHTML =("the given number is not a palindrome")
+}   
+else
+    document.getElementById("check2").innerHTML =("the given number is palindrome")
+
+
+
+	</script>
+
+</body>
+</html>
